@@ -1,10 +1,87 @@
 @import url("https://use.typekit.net/chs8kvj.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-nav {
+body {
   font-family: 'Open-Sans', sans-serif;
 }
 
+nav {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 265px;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  color: #5f5f5f;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+#heroImgContainer {
+  height: 620px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#heroImgContainer #heroImgContainerText {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#heroImgContainer h2 {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+#heroImgContainer h1 {
+  font-family: 'droid-serif', serif;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 35px;
+}
+
+#heroImgContainer a {
+  font-family: 'droid-serif', serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: #43464d;
+  color: #FFFFFF;
+  padding: 12px 25px;
+}
+
+#heroImgContainer a:hover {
+  background: #5b5f68;
+}
+
 #contactFormContainer {
-  background-color: #DADADA;
+  background-color: #5f5f5f;
 }
 /*# sourceMappingURL=style.css.map */
