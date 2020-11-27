@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/chs8kvj.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+// Colours
+$colors: (
+    black: #000000,
+    dark-blue: #1B264F,
+    blue: #3149A3,
+    gray: #DADADA,
+    white: #FFFFFF
+);
+
+// Returns a color
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+// Variables
+$footer-bg: color(gray);
+
+
+nav {
+    font-family: 'Open-Sans', sans-serif;
+}
+
+#contactFormContainer {
+    background-color: $footer-bg;
+}
