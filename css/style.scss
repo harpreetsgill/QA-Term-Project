@@ -245,6 +245,7 @@ nav {
 #contact {
     background-color: $footer-bg;
     padding: 60px 0;
+    margin-bottom: 50px;
 
     #contactFormContainer {
         max-width: 940px;
@@ -300,9 +301,10 @@ nav {
             font-size: 16px;
             background-color: color(blue);
             color: color(white);
-            width: 85px;
+            width: 82.5px;
             padding: 13px 0px;
             cursor: pointer;
+            outline: none;
         }
 
         form {
@@ -313,9 +315,44 @@ nav {
 
             #message {
                 grid-column: 1/3;
+                margin-bottom: -20px;
             }
         }
     }   
 }
 
 // Footer
+footer {
+    max-width: 940px;
+    margin: 0 auto 40px auto;
+    font-size: 14px;
+    line-height: 20px;
+
+    #footerContainer {        
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+
+        div {
+            width: 265px;
+        }
+
+        h4, li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: color(dark-gray);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
