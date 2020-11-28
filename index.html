@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+    <!-- Lightbox -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
 </head>
 <body>
@@ -82,20 +89,21 @@
 
             <!-- Featured Images -->
             <div id="featImgBig">
-                <img src="img/t-feature-1.jpg">
+                <a data-fancybox="gallery" href="img/f-feature-1.jpg"><img src="img/t-feature-1.jpg"></a>
             </div>
 
             <div id="featImgs">
-                <img src="img/t-feature-2.jpg">
-                <img src="img/t-feature-3.jpg">
-                <img src="img/t-feature-4.jpg">
-                <img src="img/t-feature-5.jpg">
+                <a data-fancybox="gallery" href="img/f-feature-2.jpg"><img src="img/t-feature-2.jpg"></a>
+                <a data-fancybox="gallery" href="img/f-feature-3.jpg"><img src="img/t-feature-3.jpg"></a>
+                <a data-fancybox="gallery" href="img/f-feature-4.jpg"><img src="img/t-feature-4.jpg"></a>
+                <a data-fancybox="gallery" href="img/f-feature-5.jpg"><img src="img/t-feature-5.jpg"></a>
+
             </div>
 
-            <img style="width: 100%;" src="img/t-placeholder.svg">
-            <img style="width: 100%;" src="img/t-placeholder.svg">
-            <img style="width: 100%;" src="img/t-placeholder.svg">
-            <img style="width: 100%;" src="img/t-placeholder.svg">
+            <a data-fancybox="gallery" href="img/f-feature-6.jpg"><img src="img/t-feature-6.jpg"></a>
+            <a data-fancybox="gallery" href="img/f-feature-7.jpg"><img src="img/t-feature-7.jpg"></a>
+            <a data-fancybox="gallery" href="img/f-feature-8.jpg"><img src="img/t-feature-8.jpg"></a>
+            <a data-fancybox="gallery" href="img/f-feature-9.jpg"><img src="img/t-feature-9.jpg"></a>
         </section>
 
         <div class="separator"></div>
@@ -222,6 +230,16 @@
 
             });
         }
+
+        // Lightbox Settings
+        $('[data-fancybox="gallery"]').fancybox({
+ 			protect: true,
+ 			buttons: [
+     			"close"
+   			],
+   			transitionEffect: "slide",
+
+ 		});
     </script>  
 </body>
 </html>
