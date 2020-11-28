@@ -58,24 +58,24 @@
                 </p>
             </div>
             <div id="aboutImg">
-                <img src="img/headshot.jpg">
+                <img src="img/headshot.jpg" alt="A young woman laughing.">
             </div>
         </section>
 
         <!-- Expandable about section -->
         <section id="accordionContainer">
             <h2 class="accordion">Who I am?</h2>
-            <p class="panel">
+            <p class="desc">
                 I am a freelance photographer. My mission is to capture the wonders of the world and preserve all the important moments in life, celebrating and creating memories of all of our special experiences.
             </p>
 
             <h2 class="accordion">Why choose me?</h2>
-            <p class="panel">
+            <p class="desc">
                 I go with the flow of people, making sure you are completely comfortable and enjoying the experience. I focus on capturing the action and emotion rather than forcing you into stiff poses. I want to see the real you, so you can look back at the real moments.
             </p>
 
             <h2 class="accordion">What I can do for you?</h2>
-            <p class="panel">
+            <p class="desc">
                 My services include wedding, sport and nature photography, but I am more than happy to take on group and individual portrait sessions too. All my photos are available for digital and printed package versions. I work together to help out each of my clients to decide the best way to display and protect their precious memories.
             </p>
         </section>
@@ -89,21 +89,21 @@
 
             <!-- Featured Images -->
             <div id="featImgBig">
-                <a data-fancybox="gallery" href="img/f-feature-1.jpg"><img src="img/t-feature-1.jpg"></a>
+                <a data-fancybox="gallery" href="img/f-feature-1.jpg"><img src="img/t-feature-1.jpg" alt="Red flowers in a green field."></a>
             </div>
 
             <div id="featImgs">
-                <a data-fancybox="gallery" href="img/f-feature-2.jpg"><img src="img/t-feature-2.jpg"></a>
-                <a data-fancybox="gallery" href="img/f-feature-3.jpg"><img src="img/t-feature-3.jpg"></a>
-                <a data-fancybox="gallery" href="img/f-feature-4.jpg"><img src="img/t-feature-4.jpg"></a>
-                <a data-fancybox="gallery" href="img/f-feature-5.jpg"><img src="img/t-feature-5.jpg"></a>
+                <a data-fancybox="gallery" href="img/f-feature-2.jpg"><img src="img/t-feature-2.jpg" alt="Two wedding rings on pink roses."></a>
+                <a data-fancybox="gallery" href="img/f-feature-3.jpg"><img src="img/t-feature-3.jpg" alt="Hands of a groom and a bride holding a flower bouquet."></a>
+                <a data-fancybox="gallery" href="img/f-feature-4.jpg"><img src="img/t-feature-4.jpg" alt="A swimmer swimming in a pool."></a>
+                <a data-fancybox="gallery" href="img/f-feature-5.jpg"><img src="img/t-feature-5.jpg" alt="A surfer on a surfboard riding a wave."></a>
 
             </div>
 
-            <a data-fancybox="gallery" href="img/f-feature-6.jpg"><img src="img/t-feature-6.jpg"></a>
-            <a data-fancybox="gallery" href="img/f-feature-7.jpg"><img src="img/t-feature-7.jpg"></a>
-            <a data-fancybox="gallery" href="img/f-feature-8.jpg"><img src="img/t-feature-8.jpg"></a>
-            <a data-fancybox="gallery" href="img/f-feature-9.jpg"><img src="img/t-feature-9.jpg"></a>
+            <a data-fancybox="gallery" href="img/f-feature-6.jpg"><img src="img/t-feature-6.jpg" alt="Road leading into trees."></a>
+            <a data-fancybox="gallery" href="img/f-feature-7.jpg"><img src="img/t-feature-7.jpg" alt="Wide fields with a view of a mountain."></a>
+            <a data-fancybox="gallery" href="img/f-feature-8.jpg"><img src="img/t-feature-8.jpg" alt="Hands and legs of a running getting ready to start the race."></a>
+            <a data-fancybox="gallery" href="img/f-feature-9.jpg"><img src="img/t-feature-9.jpg" alt="Bride and groom kissing near an ocean's shore."></a>
         </section>
 
         <div class="separator"></div>
@@ -113,7 +113,7 @@
             <h2>My Services</h2>
             <div id="servicesContainer">
                 <div class="serviceBox">
-                    <img src="img/t-wedding.jpg">
+                    <img src="img/t-wedding.jpg" alt="Two wedding rings on pink roses.">
                     <h3>Weddings</h3>
                     <p>
                         Are you getting married? Or just want beautiful pictures with your significant other? I love photographing special moments and helping you create important memories in a fun and relaxing environment. 
@@ -121,7 +121,7 @@
                 </div>
     
                 <div class="serviceBox">
-                    <img src="img/t-sports.jpg">
+                    <img src="img/t-sports.jpg" alt="A surfer on a surfboard riding a wave.">
                     <h3>Sports Events</h3>
                     <p>
                         If you know me at all, you know that I am a huge sports enthusiast. I absolutely love doing photoshoots of athletes in their element, and capturing them in the action! 
@@ -129,7 +129,7 @@
                 </div>
     
                 <div class="serviceBox">
-                    <img src="img/t-nature.jpg">
+                    <img src="img/t-nature.jpg" alt="Red floweres in a green field.">
                     <h3>Nature/Landscape</h3>
                     <p>
                         I absolutely love nature and it's always such a fun experience having photoshoots outside! Whatever the reason, I am more than happy to do your outdoor photography.
@@ -213,19 +213,20 @@
     </footer>
 
     <script>
+        // Accordion
         var acc = document.getElementsByClassName("accordion");
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
 
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                    panel.style.paddingBottom = null;
+                var desc = this.nextElementSibling;
+                if (desc.style.maxHeight) {
+                    desc.style.maxHeight = null;
+                    desc.style.paddingBottom = null;
                 }
                 else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    panel.style.paddingBottom = "10px";
+                    desc.style.maxHeight = desc.scrollHeight + "px";
+                    desc.style.paddingBottom = "10px";
                 }
 
             });
