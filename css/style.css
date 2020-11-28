@@ -37,7 +37,7 @@ nav a:hover {
   height: 620px;
   background-image: url("../img/hero.jpg");
   background-size: cover;
-  margin: 0 30px;
+  margin: 0 30px 100px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +79,82 @@ nav a:hover {
 
 #heroImgContainer a:hover {
   background: #5b5f68;
+}
+
+#heroQuote {
+  width: 80%;
+  margin: 0 auto 85px auto;
+  text-align: center;
+  font-family: 'droid-serif', serif;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+#aboutContainer {
+  max-width: 1140px;
+  margin: 0px auto 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  border-top: 0.25px solid #d4d4d4;
+}
+
+#aboutContainer h3 {
+  color: #5f5f5f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#aboutContainer h1 {
+  font-family: 'droid-serif', serif;
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 44px;
+}
+
+#aboutContainer p {
+  max-width: 453px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5f5f5f;
+}
+
+#accordionContainer {
+  margin: 0 100px 50px 100px;
+}
+
+#accordionContainer .accordion {
+  font-family: 'droid-serif', serif;
+  font-size: 24px;
+  background: #dadada;
+  padding: 10px 60px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#accordionContainer .panel {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 28px;
+  color: #43464d;
+  background: #dadada;
+  padding-left: 60px;
+  padding-right: 100px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 #contactFormContainer {

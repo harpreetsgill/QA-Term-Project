@@ -34,22 +34,20 @@
 
         <!-- Quote -->
         <div id="heroQuote">
-            <h3>Add a quote or catchphrase for photography portfolio.</h3>
+            <h3>Taking an image, freezing a moment, reveals how rich reality truly is.</h3>
         </div>
     </header>
 
     <!-- Main Content of the website -->
     <main>
         <!-- About Section -->
-        <section id="about">
+        <section id="aboutContainer">
             <div id="aboutText">
                 <h3>About</h3>
                 <h1>Hi, I'm Janette Rose.</h1>
                 <p>
-                    Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
-                </p>
-                <p>
-                    Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
+                    I am a photographer based in Vancouver, BC. I enjoy capturing the moments in life, whether that's between a wedding, sports event or capturing the world around us. I graduated from the BCIT New Media Design & Web Development Diploma program. I love using my creativity and my design background to capture unique and beautiful images.  
+
                 </p>
             </div>
             <div id="aboutImg">
@@ -58,25 +56,20 @@
         </section>
 
         <!-- Expandable about section -->
-        <section id="aboutAccordian">
-            <h2>What I do</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        <section id="accordionContainer">
+            <h2 class="accordion">Who I am?</h2>
+            <p class="panel">
+                I am a freelance photographer. My mission is to capture the wonders of the world and preserve all the important moments in life, celebrating and creating memories of all of our special experiences.
             </p>
 
-            <h2>My Work</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            <h2 class="accordion">Why choose me?</h2>
+            <p class="panel">
+                I go with the flow of people, making sure you are completely comfortable and enjoying the experience. I focus on capturing the action and emotion rather than forcing you into stiff poses. I want to see the real you, so you can look back at the real moments.
             </p>
 
-            <h2>About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </p>
-
-            <h2>What I can do for you</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            <h2 class="accordion">What I can do for you?</h2>
+            <p class="panel">
+                My services include wedding, sport and nature photography, but I am more than happy to take on group and individual portrait sessions too. All my photos are available for digital and printed package versions. I work together to help out each of my clients to decide the best way to display and protect their precious memories.
             </p>
         </section>
 
@@ -175,5 +168,25 @@
 
         <p>Copyright &copy; 2020 My Company. All rights rreserved</p>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    panel.style.paddingBottom = null;
+                }
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.style.paddingBottom = "10px";
+                }
+
+            });
+        }
+    </script>  
 </body>
 </html>
