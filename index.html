@@ -96,54 +96,78 @@
             <img style="width: 100%;" src="img/t-placeholder.svg">
             <img style="width: 100%;" src="img/t-placeholder.svg">
             <img style="width: 100%;" src="img/t-placeholder.svg">
-          </section>
+        </section>
+
+        <div class="separator"></div>
 
         <!-- My Services Section -->
-        <section id="servicesContainer">
+        <section id="services">
             <h2>My Services</h2>
-            <div id="serviceBox">
-                <img src="">
-                <h3>Weddings</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                </p>
+            <div id="servicesContainer">
+                <div class="serviceBox">
+                    <img src="img/t-wedding.jpg">
+                    <h3>Weddings</h3>
+                    <p>
+                        Are you getting married? Or just want beautiful pictures with your significant other? I love photographing special moments and helping you create important memories in a fun and relaxing environment. 
+                    </p>
+                </div>
+    
+                <div class="serviceBox">
+                    <img src="img/t-sports.jpg">
+                    <h3>Sports Events</h3>
+                    <p>
+                        If you know me at all, you know that I am a huge sports enthusiast. I absolutely love doing photoshoots of athletes in their element, and capturing them in the action! 
+                    </p>
+                </div>
+    
+                <div class="serviceBox">
+                    <img src="img/t-nature.jpg">
+                    <h3>Nature/Landscape</h3>
+                    <p>
+                        I absolutely love nature and it's always such a fun experience having photoshoots outside! Whatever the reason, I am more than happy to do your outdoor photography.
+                    </p>
+                </div>
             </div>
-
-            <div id="serviceBox">
-                <img src="">
-                <h3>Sports Events</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                </p>
-            </div>
-
-            <div id="serviceBox">
-                <img src="">
-                <h3>Nature/Landscape</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-                </p>
-            </div>
+            
         </section>
 
         <!-- Contact Form -->
-        <section id="contactFormContainer">
-            <h3>Contact form</h3>
-            <h4>Like what I do? Let's talk and make something great together!</h4>
-            <p>Fields marked with an asterisk (*) are required.</p>
+        <section id="contact">
+            <div id="contactFormContainer">
+                <h3>Contact form</h3>
+                <h4>Like what I do? Let's talk and make something great together!</h4>
+                <p><em>Fields marked with an asterisk (*) are required.</em></p>
 
-            <label>First Name *</label>
-            <input type="text">
-            <label>Last Name *</label>
-            <input type="text">
-            <label>Email Name *</label>
-            <input type="text">
-            <label>Phone Number</label>
-            <input type="text">
-            <label>Message</label>
-            <textarea></textarea>
+                <form>
+                    <div id="fName">
+                        <label>First Name *</label>
+                        <input type="text">
+                    </div>
 
-            <input type="submit" value="Submit">
+                    <div id="lName">
+                        <label>Last Name *</label>
+                        <input type="text">
+                    </div>
+
+                    <div id="eMail">
+                        <label>Email *</label>
+                        <input type="text">
+                    </div>
+
+                    <div id="phoneNumber">
+                        <label>Phone Number</label>
+                        <input type="text">
+                    </div>
+
+                    <div id="message">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+                
+            </div>        
         </section>
     </main>
 
