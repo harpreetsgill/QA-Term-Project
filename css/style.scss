@@ -315,12 +315,16 @@ nav {
 
         input[type="submit"] {
             font-size: 16px;
-            background-color: color(blue);
+            background-color: $contact-btn;
             color: color(white);
             width: 82.5px;
             padding: 13px 0px;
             cursor: pointer;
             outline: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lighten($contact-btn, 10%);
         }
 
         form {

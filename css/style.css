@@ -318,12 +318,16 @@ nav a:hover {
 
 #contact #contactFormContainer input[type="submit"] {
   font-size: 16px;
-  background-color: #3898EC;
+  background-color: #43464d;
   color: #FFFFFF;
   width: 82.5px;
   padding: 13px 0px;
   cursor: pointer;
   outline: none;
+}
+
+#contact #contactFormContainer input[type="submit"]:hover {
+  background-color: #5b5f68;
 }
 
 #contact #contactFormContainer form {
