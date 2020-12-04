@@ -132,7 +132,8 @@ nav a:hover {
 }
 
 #accordionContainer {
-  margin: 0 100px 50px 100px;
+  max-width: 1140px;
+  margin: 0 auto 50px auto;
 }
 
 #accordionContainer .accordion {
