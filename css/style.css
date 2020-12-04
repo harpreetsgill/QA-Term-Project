@@ -187,6 +187,7 @@ nav a:hover {
   grid-column: 1/5;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: #5f5f5f;
   line-height: 28px;
   text-align: center;
 }
@@ -257,6 +258,10 @@ nav a:hover {
 #services .serviceBox h3 {
   font-size: 30px;
   margin: 10px 0;
+}
+
+#services p {
+  color: #5f5f5f;
 }
 
 #contact {

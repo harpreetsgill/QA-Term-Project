@@ -193,6 +193,7 @@ nav {
         grid-column: 1/5; 
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
+        color: color(gray);
         line-height: 28px;
         text-align: center;
     }
@@ -254,6 +255,10 @@ nav {
             font-size: 30px;
             margin: 10px 0;
         }
+    }
+
+    p {
+        color: color(gray);
     }
 }
 
