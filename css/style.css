@@ -232,6 +232,10 @@ nav img {
   grid-column: 1/3;
 }
 
+#featuredContainer #featImgBig img {
+  max-width: 100%;
+}
+
 #featuredContainer #featImgs {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -249,9 +253,17 @@ nav img {
   bottom: 5px;
 }
 
+#featuredContainer #featImgs img {
+  max-width: 100%;
+}
+
 #featuredContainer a:nth-child(5), #featuredContainer a:nth-child(6), #featuredContainer a:nth-child(7), #featuredContainer a:nth-child(8) {
   position: relative;
   bottom: 5px;
+}
+
+#featuredContainer a:nth-child(5) img, #featuredContainer a:nth-child(6) img, #featuredContainer a:nth-child(7) img, #featuredContainer a:nth-child(8) img {
+  max-width: 100%;
 }
 
 .separator {
@@ -287,6 +299,10 @@ nav img {
 #services .serviceBox h3 {
   font-size: 30px;
   margin: 10px 0;
+}
+
+#services .serviceBox img {
+  max-width: 100%;
 }
 
 #services p {
@@ -419,7 +435,7 @@ footer p {
   line-height: 28px;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 976px) {
   nav #navLinks {
     display: none;
     background-color: #FFFFFF;
@@ -509,10 +525,18 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 660px) {
   #heroImgContainer {
     margin-left: 15px;
     margin-right: 15px;
+  }
+  #heroImgContainer #heroImgContainerText h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  #heroImgContainer #heroImgContainerText h2 {
+    font-size: 16px;
+    line-height: 28px;
   }
   #aboutContainer {
     margin-left: 15px;
@@ -567,8 +591,9 @@ footer p {
     -ms-grid-column-span: 2;
     grid-column: 3/5;
   }
-  #featuredContainer a:nth-child(8) img {
-    width: 100%;
+  #accordionContainer {
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .separator {
     margin-left: 15px;
@@ -586,9 +611,6 @@ footer p {
   }
   #services #servicesContainer .serviceBox {
     max-width: 100%;
-  }
-  #services #servicesContainer .serviceBox img {
-    width: 100%;
   }
   #contact {
     padding-left: 15px;
