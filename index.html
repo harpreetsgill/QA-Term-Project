@@ -23,10 +23,15 @@
     <header>
         <!-- Navigarion -->
         <nav>
-            <ul>
-                <ii><a href="#aboutContainer">About</a></ii>
-                <ii><a href="#featuredContainer">Work</a></ii>
-                <ii><a href="#services">Services</a></ii>
+            <div id="navLinks">
+                <ul>
+                    <li><a href="#aboutContainer">About</a></li>
+                    <li><a href="#featuredContainer">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <ul id="toggleMenu">
+                    <li onclick="toggleMenu();"><a href="#"><img src="img/menu.png"></a></li>
             </ul>
         </nav>
 
@@ -130,7 +135,7 @@
     
                 <div class="serviceBox">
                     <img src="img/t-nature.jpg" alt="Red floweres in a green field.">
-                    <h3>Nature/Landscape</h3>
+                    <h3>Nature</h3>
                     <p>
                         I absolutely love nature and it's always such a fun experience having photoshoots outside! Whatever the reason, I am more than happy to do your outdoor photography.
                     </p>
@@ -239,8 +244,20 @@
      			"close"
    			],
    			transitionEffect: "slide",
-
  		});
+
+        function toggleMenu() {
+            console.log('sds');
+
+            var menu = document.getElementById("navLinks");
+
+            if (menu.style.display == 'none' || menu.style.display == '') {
+                menu.style.display = 'flex';
+            }
+            else {
+                menu.style.display = 'none';
+            }
+        }
     </script>  
 </body>
 </html>
